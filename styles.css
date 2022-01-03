@@ -1,0 +1,14 @@
+* {
+    background-color: gray;
+    color: whitesmoke;
+    font-family: 'Monospace Typewriter';
+}
+@font-face {
+    font-family: 'Monospace Typewriter';
+    src: url('MonospaceTypewriter.ttf');
+}
+.flexBox {
+    display: flex;
+    align-items: center;
+    place-content:center
+}
