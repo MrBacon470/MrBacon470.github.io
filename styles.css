@@ -1,11 +1,11 @@
 * {
-    background-color: gray;
+    background-color: rgb(43, 42, 42);
     color: whitesmoke;
-    font-family: 'Monospace Typewriter';
+    font-family: 'Roboto Mono';
 }
 @font-face {
-    font-family: 'Monospace Typewriter';
-    src: url('MonospaceTypewriter.ttf');
+    font-family: 'Roboto Mono';
+    src: url('RobotoMono-Medium.ttf');
 }
 .flexBox {
     display: flex;
