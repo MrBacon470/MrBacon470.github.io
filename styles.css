@@ -1,97 +1,52 @@
+:root {
+    --bg-color: #292a30;
+    --text-color: #f8f8f2;
+    --purple: #bd93f9;
+    --red: #ff5555;
+    --green: #50fa7b;
+    --yellow: #f1fa8c;
+    --blue: #8be9fd;
+}
+
 @font-face {
     font-family: 'Roboto Mono';
     src: url('RobotoMono-Medium.ttf');
 }
-html {
+
+* {
     font-family: 'Roboto Mono';
-}
-@supports (font-variation-settings: normal) {
-    html {
-        font-family: 'Roboto Mono';
-    }
-}
-
-#waterfall {
-    margin: auto;
-}
-
-.item {
-    background-color: rgb(32, 32, 32);
-    transition: 250ms all ease-out;
-    margin-bottom: 20px;
-    width: 350px;
-}
-
-.item:hover {
-    transform: scale(1.025);
-    z-index: 1;
-    box-shadow: 0 0 10px 10px #00000044;
-}
-
-.item:active {
-    transform: scale(0.975);
-}
-
-body {
-    background-color: #4e4e4e;
-    color: #fff;
-    margin: 20px;
-}
-
-img {
-    max-width: 350px;
-    width: calc(100vw - 40px);
-}
-
-.title {
-    font-size: 25px;
-}
-
-.desc {
-    padding: 0 20px 10px 20px;
-}
-
-h1,
-.subtitle {
+    color: var(--text-color);
     text-align: center;
 }
 
-a {
-    color: #fff;
-    text-decoration: none;
+html {
+    background-color: var(--bg-color);
 }
 
-/* https://matthewjamestaylor.com/bottom-footer */
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+h1, h2, h3, h4, p {
+    background-color: inherit;
 }
 
-#container {
-    min-height: 100%;
-    position: relative;
+.flexCol {
+    display: flex;
+    flex-direction: column;
 }
 
-#body {
-    padding: 10px;
-    padding-bottom: 60px; /* Height of the footer */
+.flexRow {
+    display: flex;
+    flex-direction: row;
 }
+
+.projectContainer {
+    width: 25em;
+    height: 12em;
+    margin: 1em;
+    padding: .25em;
+}
+
 
 #footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: calc(100% - 20px);
-    height: 40px; /* Height of the footer */
-    background-color: #282828;
-    color: #bbb;
-    padding: 10px;
-    font-size: 12px;
-}
-
-#footer a {
-    color: #bbb;
-    text-decoration: underline;
+    width: 100%;
 }
