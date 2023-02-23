@@ -6,6 +6,8 @@
     --green: #50fa7b;
     --yellow: #f1fa8c;
     --blue: #8be9fd;
+    --orange: #ffb86c;
+    --bluegreen: #3eb794;
 }
 
 @font-face {
@@ -42,6 +44,31 @@ h1, h2, h3, h4, p {
     height: 12em;
     margin: 1em;
     padding: .25em;
+    border: 2px solid var(--text-color);
+    transition-duration: 0.5s;
+    background-color: var(--bg-color);
+}
+.projectContainer:hover {
+    transform: scale(1.25);
+    z-index: 1;
+    box-shadow: 0 0 10px 10px #f8f8f286;
+    transition-duration: 0.5s;
+}
+
+.projectContainer:active {
+    transform: scale(0.85);
+    transition-duration: 0.5s;
+}
+
+
+
+#mainContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 
@@ -49,4 +76,21 @@ h1, h2, h3, h4, p {
     position: fixed;
     bottom: 0;
     width: 100%;
+    color: var(--text-color);
+    transition-duration: 0.5s;
+}
+
+#footer:hover {
+    color: var(--purple);
+    transition-duration: 0.5s;
+}
+
+#headerText {
+    color: var(--text-color);
+    transition-duration: 0.5s;
+}
+
+#headerText:hover {
+    color: var(--purple);
+    transition-duration: 0.5s;
 }
