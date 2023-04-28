@@ -66,7 +66,7 @@ const projectObjs = [
         name: 'Coop Co',
         desc: 'Egg Inc Knockoff but without all the MTX and its fun',
         url: 'https://mrbacon470.github.io/Coop-Co/',
-        state: 'Being Updated Still',
+        state: 'In Development',
         lang: 'JS',
         platform: 'Web',
         titleColor: '--yellow'
@@ -79,5 +79,14 @@ const projectObjs = [
         lang: 'JS',
         platform: 'Web',
         titleColor: '--purple'
+    },
+    {
+        name: 'Pixel Simulation',
+        desc: 'A fun Javascript and HTML Canvas based particle simulator based off the powder toy',
+        url: 'https://mrbacon470.github.io/Pixel-Simulation/',
+        state: 'In Development',
+        lang: 'JS',
+        platform: 'Web',
+        titleColor: '--pink',
     }
 ]
