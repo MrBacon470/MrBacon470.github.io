@@ -83,7 +83,7 @@ const projectObjs = [
     {
         name: 'Pixel Simulation',
         desc: 'A fun Javascript and HTML Canvas based particle simulator based off the powder toy',
-        url: 'https://mrbacon470.github.io/Pixel-Simulation/',
+        url: 'https://mrbacon470.github.io/PixelSimulation/',
         state: 'In Development',
         lang: 'JS',
         platform: 'Web',
