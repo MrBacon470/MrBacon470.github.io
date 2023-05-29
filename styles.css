@@ -30,6 +30,12 @@ h1, h2, h3, h4, p {
     background-color: inherit;
 }
 
+a {
+    color: var(--purple)
+}
+
+a:visited {color: var(--pink)}
+
 .flexCol {
     display: flex;
     flex-direction: column;
@@ -40,38 +46,17 @@ h1, h2, h3, h4, p {
     flex-direction: row;
 }
 
-.projectContainer {
-    width: 25em;
-    height: 12em;
-    margin: 1em;
-    padding: .25em;
-    border: 2px solid var(--text-color);
-    transition-duration: 0.5s;
-    background-color: var(--bg-color);
-}
-.projectContainer:hover {
-    transform: scale(1.25);
-    z-index: 1;
-    box-shadow: 0 0 10px 10px #f8f8f286;
-    transition-duration: 0.5s;
-}
 
-.projectContainer:active {
-    transform: scale(0.85);
-    transition-duration: 0.5s;
-}
-
-
-
-#mainContainer {
+#mainContainer, #otherContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     align-content: center;
 }
 
+#otherContainer div a {margin: 0.5em;}
 
 #footer {
     position: fixed;
