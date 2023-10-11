@@ -1,0 +1,15 @@
+---
+import '../css/global.css'
+const {projectName,projectDesc,projectLink} = Astro.props
+
+---
+
+<div>
+    <h4>{projectName}</h4>
+    <p>{projectDesc}</p>
+    <a id="projectLink">Link To Site</a>
+</div>
+
+<style>
+    document.getElementById('projectLink')?.setAttribute('href',projectLink);
+</style>

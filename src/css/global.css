@@ -6,7 +6,7 @@
     --white: #dedede;
     --purple: #b573db;
     --dark-purple: #7c39a3;
-    --gradient-color: linear-gradient(to left,var(--light-purple),var(--purple));
+    --gradient-color-light-purple: linear-gradient(to right,var(--light-purple),var(--purple));
 }
 
 /*Fonts
@@ -27,7 +27,7 @@ body {
     text-align: center;
     margin-left: 0px;
     margin-right: 0px;
-    color: whitesmoke;
+    color: var(--white);
     background-color: var(--background-color);
 }
 
@@ -44,13 +44,13 @@ hr {
 a {
     font-family: 'Martian Mono';
     font-size: 1em;
-    color: var(--purple)
+    color: var(--light-purple)
 }
 
 /*IDs & Classes
 =============================================================================*/
 .text-gradient-light-purple {
-    background:var(--gradient-color);
+    background:var(--gradient-color-light-purple);
     background-clip:text;
     -webkit-text-fill-color: transparent;
 }
