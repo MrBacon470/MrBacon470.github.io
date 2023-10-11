@@ -1,0 +1,56 @@
+/*Root Variables
+=============================================================================*/
+:root {
+    --background-color: #3b373f;
+    --light-purple: #e0b5f9;
+    --white: #dedede;
+    --purple: #b573db;
+    --dark-purple: #7c39a3;
+    --gradient-color: linear-gradient(to left,var(--light-purple),var(--purple));
+}
+
+/*Fonts
+=============================================================================*/
+@font-face {
+    font-family: 'Roboto Mono';
+    src: url('/public/Fonts/RobotoMono-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Martian Mono';
+    src: url('/public/Fonts/MartianMono-Medium.ttf');
+}
+
+/*HTML Elements
+=============================================================================*/
+body {
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    color: whitesmoke;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-family: 'Roboto Mono';
+    text-align: center;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid var(--light-purple);
+}
+
+a {
+    font-family: 'Martian Mono';
+    font-size: 1em;
+    color: var(--purple)
+}
+
+/*IDs & Classes
+=============================================================================*/
+.text-gradient-light-purple {
+    background:var(--gradient-color);
+    background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
