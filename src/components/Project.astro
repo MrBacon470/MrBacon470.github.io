@@ -1,15 +1,19 @@
 ---
 import '../css/global.css'
-const {projectName,projectDesc,projectLink} = Astro.props
+const {projectName,projectDesc,projectLink,color} = Astro.props
 
 ---
 
-<div>
-    <h4>{projectName}</h4>
+<div style=`border: 2px solid ${color}; align-items:center; justify-content:center; padding-bottom:0.5em;`>
+    <h4 style=`color:${color}`>{projectName}</h4>
     <p>{projectDesc}</p>
-    <a id="projectLink">Link To Site</a>
+    <a id="projectLink" href=`${projectLink}`>Link To Site</a>
 </div>
 
 <style>
-    document.getElementById('projectLink')?.setAttribute('href',projectLink);
+    div {
+        padding: .25em;
+        min-height: 12em;
+        width: 100%;
+    }
 </style>

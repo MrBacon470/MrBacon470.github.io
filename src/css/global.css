@@ -6,6 +6,12 @@
     --white: #dedede;
     --purple: #b573db;
     --dark-purple: #7c39a3;
+    --yellow: #dbd973;
+    --blue: #7388db;
+    --green: #73db7c;
+    --red: #db7373;
+    --orange: #dba773;
+    --cyan: #73c5db;
     --gradient-color-light-purple: linear-gradient(to right,var(--light-purple),var(--purple));
 }
 
@@ -31,7 +37,7 @@ body {
     background-color: var(--background-color);
 }
 
-h1 {
+h1,h2,h3,h3,h4 {
     font-family: 'Roboto Mono';
     text-align: center;
 }
@@ -39,6 +45,10 @@ h1 {
 hr {
     width: 100%;
     border: 1px solid var(--light-purple);
+}
+
+p {
+    font-family: 'Martian Mono';
 }
 
 a {
@@ -53,4 +63,28 @@ a {
     background:var(--gradient-color-light-purple);
     background-clip:text;
     -webkit-text-fill-color: transparent;
+}
+
+.gridContainer {
+    min-height: 100%;
+    width: 85%;
+    display: grid;
+    grid-template-columns: repeat(3,33%);
+    grid-template-rows: repeat(auto-fill,2em);
+    grid-column-gap: 1em;
+    grid-row-gap: 6em;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexCol {
+    display: flex;
+    flex-direction: column;
 }
